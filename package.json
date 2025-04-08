@@ -1,0 +1,25 @@
+{
+  "name": "eggstractor-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && sass src/sass/custom.sass:dist/prod.css --style compressed && cp src/index.html dist/ && cp src/404.html dist/",
+    "serve": "browser-sync start --server dist --files 'dist/**/*' --no-notify",
+    "start": "npm run build && npm run serve",
+    "watch:sass": "sass --watch src/sass/custom.sass:dist/prod.css --style compressed",
+    "watch:files": "nodemon --watch src --ext html --exec \"cp src/*.html dist/\"",
+    "dev": "npm run clean && npm run build && concurrently \"npm run watch:sass\" \"npm run watch:files\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "rimraf": "^5.0.5",
+    "sass": "^1.83.1"
+  }
+}

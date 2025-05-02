@@ -1,0 +1,48 @@
+/* Generated Tailwind-SCSS */
+@mixin input_resting {
+  @apply gap-x-0.5 gap-y-0.5 pt-0 pr-0 pb-0 pl-0; 
+}
+
+@mixin input_resting_Label {
+  @apply text-[#282828] font-[inter] text-xl font-medium; 
+}
+
+@mixin input_resting_Input-box {
+  @apply bg-white gap-x-3 gap-y-3 border-DEFAULT border-solid border-[#d9d9d9] rounded-tl-lg rounded-tr-lg rounded-br-lg rounded-bl-lg pt-[11px] pr-3 pb-[11px] pl-3; 
+}
+
+@mixin input_resting_Input-box_Input-text {
+  @apply text-[#282828] font-[inter] text-base font-normal; 
+}
+
+@mixin input_hover {
+  @apply gap-x-0.5 gap-y-0.5 pt-0 pr-0 pb-0 pl-0; 
+}
+
+@mixin input_hover_Label {
+  @apply text-[#282828] font-[inter] text-xl font-medium; 
+}
+
+@mixin input_hover_Input-box {
+  @apply bg-white gap-x-3 gap-y-3 border-DEFAULT border-solid border-[#747474] rounded-tl-lg rounded-tr-lg rounded-br-lg rounded-bl-lg pt-[11px] pr-3 pb-[11px] pl-3; 
+}
+
+@mixin input_hover_Input-box_Input-text {
+  @apply text-[#282828] font-[inter] text-base font-normal; 
+}
+
+@mixin input_active {
+  @apply gap-x-0.5 gap-y-0.5 pt-0 pr-0 pb-0 pl-0; 
+}
+
+@mixin input_active_Label {
+  @apply text-[#0177cc] font-[inter] text-xl font-medium; 
+}
+
+@mixin input_active_Input-box {
+  @apply bg-white gap-x-3 gap-y-3 border-DEFAULT border-solid border-[#0177cc] rounded-tl-lg rounded-tr-lg rounded-br-lg rounded-bl-lg pt-[11px] pr-3 pb-[11px] pl-3; 
+}
+
+@mixin input_active_Input-box_Input-text {
+  @apply text-[#282828] font-[inter] text-base font-normal; 
+}
